@@ -1,0 +1,22 @@
+{
+    "name": "InfinityTracking/InfinityJavaScriptBundle",
+    "type": "symfony-bundle",
+    "description": "InfinityTracking InfinityJavaScriptBundle",
+    "keywords": ["analytics, javascript, infinity, tracking"],
+    "homepage": "http://github.com/InfinityTracking/InfinityJavaScriptBundle",
+    "authors": [
+        {
+            "name": "Chris Sedlmayr",
+            "email": "chris.sedlmayr@infinity-tracking.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": "2.1.*"
+    },
+    "autoload": {
+        "psr-0": { "InfinityTracking\\Bundle\\InfinityJavaScriptBundle": "" }
+    },
+    "target-dir": "InfinityTracking/Bundle/InfinityJavaScriptBundle"
+}

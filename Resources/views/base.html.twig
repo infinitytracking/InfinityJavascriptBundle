@@ -1,0 +1,17 @@
+<!-- Infinity Tracking Code v1.30
+ Copyright Infinity Tracking 2011
+ www.Infinity-Tracking.com -->
+<script type="text/javascript">
+    var _ictt = _ictt || [];
+    _ictt.push(['_setIgrp', {{ infinitytracking_infinityjavascript.igrp }}]);
+    {% for dgrp in infinitytracking_infinityjavascript.dgrps %}
+    _ictt.push(['_setDgrp', [{{ dgrp.id }}, {{ dgrp.classes }}]]);    
+    {% endfor %}
+    _ictt.push(['_track']);
+    (function() {
+        var ict = document.createElement('script'); ict.type = 'text/javascript'; ict.async = true;
+        ict.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'assets.infinity-tracking.net/nas/js/nas.v1.min.js';
+        var scr = document.getElementsByTagName('script')[0]; scr.parentNode.insertBefore(ict, scr);
+    })();
+</script>
+<!-- Infinity Tracking Code End -->
