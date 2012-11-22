@@ -3,6 +3,9 @@
 Symfony2 Bundle to add Infinity Tracking JavaScript code to your site.
 Support for page tracking, number replacement, custom triggers.
 
+The configuration you define is made available to all twig templates
+ through the use of an extension within the bundle.
+
 ##Configure
 
 Provide your Installation ID, along with Tracking Pool (dgrp) IDs and the 
@@ -45,7 +48,8 @@ infinitytracking_infinityjavascript:
     'details' : {
         'txc':'GBP',
         'txv':'10.00',
-        'txr':'abcd1234'
+        'txr':'abcd1234',
+        't':'Practical Caravan ~ 6 Month Subscription'
     }
 } %}
 ```
