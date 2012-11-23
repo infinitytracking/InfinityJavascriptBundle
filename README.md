@@ -30,7 +30,7 @@ infinitytracking_infinity_javascript:
 ```smarty
 {# app/Resources/views/base.html.twig #}
 
-{% include 'InfinityJavascriptBundle::base.html.twig' %}
+{% include 'InfinityJavascriptBundle:Default:base.html.twig' %}
 
 ...
 {# Other JavaScript files from your head here #}
