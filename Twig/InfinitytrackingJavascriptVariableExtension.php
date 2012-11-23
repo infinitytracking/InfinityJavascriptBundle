@@ -11,6 +11,8 @@
 
 namespace Infinitytracking\Bundle\InfinityJavascriptBundle\Twig;
 
+use Twig_Extension;
+
 /**
  * Twig Extension that makes key variables available to all twig templates
  *
@@ -30,8 +32,8 @@ class InfinitytrackingJavascriptVariableExtension extends Twig_Extension
     public function getGlobals()
     {
         return array(
-            'infinitytracking_infinity_javascript.igrp'  => $igrp,
-            'infinitytracking_infinity_javascript.dgrps' => $dgrps
+            'infinitytracking_infinity_javascript.igrp'  => $this->igrp,
+            'infinitytracking_infinity_javascript.dgrps' => $this->dgrps
         );
     }
 

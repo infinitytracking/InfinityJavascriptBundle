@@ -20,10 +20,9 @@ dynamically allocated phone number for this Tracking Pool
 
 infinitytracking_infinity_javascript:
     igrp: 1
-    dgrps: [
-        { "id":1, "classes": ['phone_number', 'number'] },
-        { "id":2, "classes": ['service_phone_number'] }
-    ]
+    dgrps:
+        sales:      { id: 1, 'classes':['phone_number', 'number'] }
+        service:    { id: 2, 'classes':['service_phone_number'] }
 ```
 
 ##Include the template in your base
