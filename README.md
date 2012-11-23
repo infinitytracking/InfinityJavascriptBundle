@@ -1,4 +1,4 @@
-#InfinityTracking InfinityJavascriptBundle
+#Infinitytracking InfinityJavascriptBundle
 
 Symfony2 Bundle to add Infinity Tracking Javascript code to your site.
 Support for page tracking, number replacement, custom triggers.

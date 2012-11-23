@@ -1,22 +1,22 @@
 <?php
 
 /*
- * This file is part of the InfinityTrackingInfinityJavascriptBundle package.
+ * This file is part of the InfinitytrackingInfinityJavascriptBundle package.
  *
- * (c) InfinityTracking <http://github.com/InfinityTracking/InfinityJavascriptBundle>
+ * (c) Infinitytracking <http://github.com/Infinitytracking/InfinityJavascriptBundle>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace InfinityTracking\Bundle\InfinityJavascriptBundle\Twig;
+namespace Infinitytracking\Bundle\InfinityJavascriptBundle\Twig;
 
 /**
  * Twig Extension that makes key variables available to all twig templates
  *
  * @author Chris Sedlmayr <chris.sedlmayr@infinity-tracking.com>
  */
-class InfinityTrackingJavascriptVariableExtension extends Twig_Extension
+class InfinitytrackingJavascriptVariableExtension extends Twig_Extension
 {
     protected $igrp;
     protected $dgrps;

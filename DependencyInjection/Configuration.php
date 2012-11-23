@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of the InfinityTrackingInfinityJavascriptBundle package.
+ * This file is part of the InfinitytrackingInfinityJavascriptBundle package.
  *
- * (c) InfinityTracking <http://github.com/InfinityTracking/InfinityJavascriptBundle>
+ * (c) Infinitytracking <http://github.com/Infinitytracking/InfinityJavascriptBundle>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace InfinityTracking\Bundle\InfinityJavascriptBundle\DependencyInjection;
+namespace Infinitytracking\Bundle\InfinityJavascriptBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

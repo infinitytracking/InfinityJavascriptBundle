@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of the InfinityTrackingInfinityJavascriptBundle package.
+ * This file is part of the InfinitytrackingInfinityJavascriptBundle package.
  *
- * (c) InfinityTracking <http://github.com/InfinityTracking/InfinityJavascriptBundle>
+ * (c) Infinitytracking <http://github.com/Infinitytracking/InfinityJavascriptBundle>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace InfinityTracking\Bundle\InfinityJavascriptBundle\DependencyInjection;
+namespace Infinitytracking\Bundle\InfinityJavascriptBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -19,7 +19,7 @@ use Symfony\Component\Config\FileLocator;
 /**
  * @author Chris Sedlmayr <chris.sedlmayr@infinity-tracking.com>
  */
-class InfinityTrackingInfinityJavascriptExtension extends Extension
+class InfinitytrackingInfinityJavascriptExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
