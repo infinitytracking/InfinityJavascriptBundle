@@ -1,6 +1,6 @@
-#InfinityTracking InfinityJavaScriptBundle
+#InfinityTracking InfinityJavascriptBundle
 
-Symfony2 Bundle to add Infinity Tracking JavaScript code to your site.
+Symfony2 Bundle to add Infinity Tracking Javascript code to your site.
 Support for page tracking, number replacement, custom triggers.
 
 The configuration you define is made available to all twig templates
@@ -31,7 +31,7 @@ infinitytracking_infinityjavascript:
 ```smarty
 {# app/Resources/views/base.html.twig #}
 
-{% include 'InfinityJavaScriptBundle::base.html.twig' %}
+{% include 'InfinityJavascriptBundle::base.html.twig' %}
 
 ...
 {# Other JavaScript files from your head here #}
@@ -43,7 +43,7 @@ infinitytracking_infinityjavascript:
 ##Custom Triggers
 
 ```smarty
-{% include 'InfinityJavaScriptBundle::CustomTrigger.html.twig' with  {
+{% include 'InfinityJavascriptBundle::CustomTrigger.html.twig' with  {
     'act' : 'SALE',
     'details' : {
         'txc':'GBP',
