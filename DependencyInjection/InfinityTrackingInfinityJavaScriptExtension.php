@@ -13,6 +13,8 @@ namespace InfinityTracking\Bundle\InfinityJavaScriptBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use Symfony\Component\Config\FileLocator;
 
 /**
  * @author Chris Sedlmayr <chris.sedlmayr@infinity-tracking.com>
