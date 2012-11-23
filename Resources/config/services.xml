@@ -5,13 +5,13 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="infinitytracking_infinityjavascript.javascript_variable_extension.class">Infinitytracking\Bundle\InfinityJavascriptBundle\Twig\InfinitytrackingJavascriptVariableExtension.php</parameter>
+        <parameter key="infinitytracking_infinity_javascript.javascript_variable_extension.class">Infinitytracking\Bundle\InfinityJavascriptBundle\Twig\InfinitytrackingJavascriptVariableExtension.php</parameter>
     </parameters>
 
     <services>
-        <service id="infinitytracking_infinityjavascript.javascript_variable_extension" class="%infinitytracking_infinityjavascript.javascript_variable_extension.class%">
-            <argument>%infinitytracking_infinityjavascript.igrp%</argument>
-            <argument>%infinitytracking_infinityjavascript.dgrps%</argument>
+        <service id="infinitytracking_infinity_javascript.javascript_variable_extension" class="%infinitytracking_infinity_javascript.javascript_variable_extension.class%">
+            <argument>%infinitytracking_infinity_javascript.igrp%</argument>
+            <argument>%infinitytracking_infinity_javascript.dgrps%</argument>
             <tag name="twig.extension" />
         </service>
     </services>

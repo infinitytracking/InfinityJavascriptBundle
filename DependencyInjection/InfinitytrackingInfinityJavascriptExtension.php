@@ -28,20 +28,20 @@ class InfinitytrackingInfinityJavascriptExtension extends Extension
         // use the defined config to replace parameters in the twig extension
 
         // we must have an igrp
-        if (!isset($config['infinitytracking_infinityjavascript']['igrp'])) {
-            throw new \InvalidArgumentException('The "igrp" option must be set under "infinitytracking_infinityjavascript"');
+        if (!isset($config['infinitytracking_infinity_javascript']['igrp'])) {
+            throw new \InvalidArgumentException('The "igrp" option must be set under "infinitytracking_infinity_javascript"');
         }
 
         $container->setParameter(
-            'infinitytracking_infinityjavascript.igrp',
-            $config['infinitytracking_infinityjavascript']['igrp']
+            'infinitytracking_infinity_javascript.igrp',
+            $config['infinitytracking_infinity_javascript']['igrp']
         );
 
         // dgrps are optional
-        if (isset($config['infinitytracking_infinityjavascript']['dgrps'])) {
+        if (isset($config['infinitytracking_infinity_javascript']['dgrps'])) {
             $container->setParameter(
-                'infinitytracking_infinityjavascript.dgrps',
-                $config['infinitytracking_infinityjavascript']['dgrps']
+                'infinitytracking_infinity_javascript.dgrps',
+                $config['infinitytracking_infinity_javascript']['dgrps']
             );
         }
 

@@ -30,13 +30,13 @@ class InfinitytrackingJavascriptVariableExtension extends Twig_Extension
     public function getGlobals()
     {
         return array(
-            'infinitytracking_infinityjavascript.igrp'  => $igrp,
-            'infinitytracking_infinityjavascript.dgrps' => $dgrps
+            'infinitytracking_infinity_javascript.igrp'  => $igrp,
+            'infinitytracking_infinity_javascript.dgrps' => $dgrps
         );
     }
 
     public function getName()
     {
-        return 'infinitytracking_infinityjavascript.javascript_variable_extension';
+        return 'infinitytracking_infinity_javascript.javascript_variable_extension';
     }
 }

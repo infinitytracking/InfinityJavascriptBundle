@@ -18,7 +18,7 @@ dynamically allocated phone number for this Tracking Pool
 ```yaml
 #app/config/config.yml
 
-infinitytracking_infinityjavascript:
+infinitytracking_infinity_javascript:
     igrp: 1
     dgrps: [
         { "id":1, "classes": ['phone_number', 'number'] },
