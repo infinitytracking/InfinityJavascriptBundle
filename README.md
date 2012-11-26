@@ -8,17 +8,17 @@ The configuration you define is made available to all twig templates
 
 ##Installation
 
-Step 1) Download
+###Step 1) Download
 
 The recommended method is via composer.  
 Add the bundle as a dependency to your composer.json file
 
 ```json
-    {
-        "require": {
-            "infinitytracking/infinitytracking-javascript-bundle": "dev-master"
-        }
+{
+    "require": {
+        "infinitytracking/infinitytracking-javascript-bundle": "dev-master"
     }
+}
 ```
 
 Now tell composer to install this new requirement
@@ -29,7 +29,7 @@ php composer.phar update
 
 This will be installed into your vendor directory
 
-Step 2) Register the Bundle in your kernel
+###Step 2) Register the Bundle in your kernel
 
 ```php
 // app/AppKernel.php
@@ -43,7 +43,7 @@ public function registerBundles()
 }
 ```
 
-Step 3) Configuration
+###Step 3) Configuration
 
 Provide your Installation ID, along with Tracking Pool (dgrp) IDs and the 
 classes you want to target in your pages.  
