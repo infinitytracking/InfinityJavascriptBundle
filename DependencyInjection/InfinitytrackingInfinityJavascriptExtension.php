@@ -27,8 +27,8 @@ class InfinitytrackingInfinityJavascriptExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        // we must have an igrp
-        if (!isset($config['igrp'])) {
+        // we must have an igrp if we are enabled
+        if (!isset($config['igrp']) && $config['enabled']) {
             throw new \InvalidArgumentException('The "igrp" option must be set under "infinitytracking_infinity_javascript"');
         }
 

@@ -27,9 +27,12 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('infinitytracking_infinity_javascript');
 
         $rootNode
+            ->treatFalseLike(array('enabled' => false))
+            ->treatTrueLike(array('enabled' => true))
+            ->treatNullLike(array('enabled' => true))
             ->children()
                 ->booleanNode('enabled')->defaultFalse()->end()
-                ->scalarNode('igrp')->isRequired()->cannotBeEmpty()->end()
+                ->scalarNode('igrp')->cannotBeEmpty()->end()
                 ->arrayNode('dgrps')
                     ->prototype('array')
                         ->isRequired()
