@@ -77,7 +77,7 @@ infinitytracking_infinity_javascript:
 ```smarty
 {# app/Resources/views/base.html.twig #}
 
-{% include 'InfinityJavascriptBundle:Default:base.html.twig' %}
+{% include 'InfinitytrackingInfinityJavascriptBundle:Default:base.html.twig' %}
 
 ...
 {# Other JavaScript files from your head here #}
@@ -87,14 +87,14 @@ infinitytracking_infinity_javascript:
 ##Custom Triggers
 
 ```smarty
-{% include 'InfinityJavascriptBundle:Default:customTrigger.html.twig' with  {
+{% include 'InfinitytrackingInfinityJavascriptBundle:Default:customTrigger.html.twig' with  {
     'act' : 'SALE',
-    'details' : {
+    'details' : "{
         'txc':'GBP',
         'txv':'10.00',
         'txr':'abcd1234',
         't':'Practical Caravan ~ 6 Month Subscription'
-    }
+    }"
 } %}
 ```
 
@@ -102,13 +102,13 @@ This will be rendered within script tags, to render without (if you are doing
  that yourself), then just render to the js template instead.
 
 ```smarty
-{% include 'InfinityJavascriptBundle:Default:customTrigger.js.twig' with  {
+{% include 'InfinitytrackingInfinityJavascriptBundle:Default:customTrigger.js.twig' with  {
     'act' : 'SALE',
-    'details' : {
+    'details' : "{
         'txc':'GBP',
         'txv':'10.00',
         'txr':'abcd1234',
         't':'Practical Caravan ~ 6 Month Subscription'
-    }
+    }"
 } %}
 ```
