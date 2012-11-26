@@ -1,2 +1,2 @@
 _ictt = _ictt || [];
-_ictt.push(['_customTrigger', {{ act }}, {{ details|default('{}') }} ]);
+_ictt.push(['_customTrigger', '{{ act|raw }}', {{ details|default('{}')|raw }} ]);
