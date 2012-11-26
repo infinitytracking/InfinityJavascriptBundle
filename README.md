@@ -62,7 +62,11 @@ infinitytracking_infinity_javascript:
         service:    { id: 2, 'classes':['service_phone_number'] }
 ```
 
-##Include the template in your base
+#Tracking
+
+##Page Tracking
+
+###Include the template in your base
 
 ```smarty
 {# app/Resources/views/base.html.twig #}
@@ -73,8 +77,6 @@ infinitytracking_infinity_javascript:
 {# Other JavaScript files from your head here #}
 </head>
 ```
-
-#Tracking
 
 ##Custom Triggers
 
