@@ -35,18 +35,20 @@ class InfinitytrackingInfinityJavascriptExtension extends Extension
             throw new \InvalidArgumentException('The "igrp" option must be set under "infinitytracking_infinity_javascript"');
         }
 
-        $container->setParameter(
-            'infinitytracking_infinity_javascript.igrp',
-            $config['igrp']
-        );
-
-        // dgrps are optional
-        if (isset($config['dgrps'])) {
+        if ($config['enabled']) {
+            // dgrps are optional
+            if (isset($config['dgrps'])) {
+                $container->setParameter(
+                    'infinitytracking_infinity_javascript.dgrps',
+                    $config['dgrps']
+                );
+            }
             $container->setParameter(
-                'infinitytracking_infinity_javascript.dgrps',
-                $config['dgrps']
+                'infinitytracking_infinity_javascript.igrp',
+                $config['igrp']
             );
         }
+
 
     }
 }
