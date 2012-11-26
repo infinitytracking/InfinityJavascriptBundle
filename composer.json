@@ -1,8 +1,8 @@
 {
-    "name": "Infinitytracking/InfinityJavascriptBundle",
+    "name": "infinitytracking/infinity-javascript-bundle",
     "type": "symfony-bundle",
     "description": "Infinitytracking InfinityJavascriptBundle",
-    "keywords": ["analytics, javascript, infinity, tracking"],
+    "keywords": ["analytics", "javascript", "infinity", "tracking"],
     "homepage": "http://github.com/Infinitytracking/InfinityJavascriptBundle",
     "authors": [
         {
