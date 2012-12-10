@@ -6,7 +6,7 @@
     var _ictt = _ictt || [];
     _ictt.push(['_setIgrp', {{ infinitytracking_infinity_javascript.igrp }}]);
     {% for dgrp in infinitytracking_infinity_javascript.dgrps %}
-    _ictt.push(['_setDgrp', [{{ dgrp.id }}, Array('{{ dgrp.classes|join("','")raw }}')]]);
+    _ictt.push(['_setDgrp', [{{ dgrp.id }}, Array('{{ dgrp.classes|join("','")|raw }}')]]);
     {% endfor %}
     _ictt.push(['_track']);
     (function() {
