@@ -41,6 +41,7 @@ class Configuration implements ConfigurationInterface
                             ->arrayNode('classes')
                                 ->prototype('scalar')->isRequired()->cannotBeEmpty()->end()
                             ->end()
+                            ->scalarNode('fallback')->isRequired()->cannotBeEmpty()->end()
                         ->end()
                     ->end()
                 ->end()

@@ -64,8 +64,8 @@ infinitytracking_infinity_javascript:
     enabled: TRUE
     igrp: 19
     dgrps:
-        sales:      { id: 1, 'classes':['phone_number', 'number'] }
-        service:    { id: 2, 'classes':['service_phone_number'] }
+        sales:      { id: 1, classes: ['phone_number', 'number'], fallback: '08440001111' }
+        service:    { id: 2, classes: ['service_phone_number'], fallback: '08440002222' }
 ```
 
 #Tracking
@@ -82,6 +82,18 @@ infinitytracking_infinity_javascript:
 ...
 {# Other JavaScript files from your head here #}
 </head>
+```
+
+##Number Replacement
+
+Include the number template anywhere you want to render a number, setting
+ the 'dgrp' name to that within your configuration.
+
+This will output the fallback number, and add the tracking tags to ensure
+ the dynamic number is replaced into it during tracking.
+
+```smarty
+{% include 'InfinitytrackingInfinityJavascriptBundle:Default:number.html.twig' with {'dgrp':'sales'} %}
 ```
 
 ##Custom Triggers
