@@ -22,7 +22,7 @@ Add the bundle as a dependency to your composer.json file
         }
     ],
     "require": {
-        "infinitytracking/infinitytracking-javascript-bundle": "dev-master"
+        "infinitytracking/infinitytracking-javascript-bundle": "1.0.*"
     }
 }
 ```
