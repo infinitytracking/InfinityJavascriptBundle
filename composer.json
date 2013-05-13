@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.1.*"
+        "symfony/symfony": ">=2.1.*"
     },
     "autoload": {
         "psr-0": { "Infinitytracking\\Bundle\\InfinityJavascriptBundle": "" }
