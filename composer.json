@@ -1,6 +1,7 @@
 {
     "name": "infinitytracking/infinity-javascript-bundle",
     "type": "symfony-bundle",
+    "license": "GPL-2.0",
     "description": "Infinitytracking InfinityJavascriptBundle",
     "keywords": ["analytics", "javascript", "infinity", "tracking"],
     "homepage": "http://github.com/Infinitytracking/InfinityJavascriptBundle",
