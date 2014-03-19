@@ -15,12 +15,6 @@ Add the bundle as a dependency to your composer.json file
 
 ```json
 {
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:infinitytracking/InfinityJavascriptBundle.git"
-        }
-    ],
     "require": {
         "infinitytracking/infinitytracking-javascript-bundle": "1.0.*"
     }
